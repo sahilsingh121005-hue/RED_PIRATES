@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RED PIRATES | Guild Recruitment</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+body{
+background:#0d0d0d;
+color:white;
+}
+header{
+padding:40px;
+text-align:center;
+background:linear-gradient(90deg,#ff0000,#111);
+}
+header h1{
+font-size:50px;
+color:#ff3b3b;
+}
+header p{
+margin-top:10px;
+color:#ddd;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:30px;
+}
+
+.card{
+background:#1b1b1b;
+padding:25px;
+border-radius:15px;
+margin-bottom:25px;
+}
+
+h2{
+color:#ff3b3b;
+margin-bottom:15px;
+}
+
+input,textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:none;
+border-radius:8px;
+}
+
+button{
+width:100%;
+padding:15px;
+background:#ff3b3b;
+color:white;
+font-size:18px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{
+background:#ff0000;
+}
+
+footer{
+text-align:center;
+padding:20px;
+color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>RED PIRATES</h1>
+<p>Official Free Fire Guild Recruitment</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>Guild UID</h2>
+<p>1202942324</p>
+<p>2275224412</p>
+<p>1907244214</p>
+</div>
+
+<div class="card">
+<h2>Apply Now</h2>
+
+<input type="text" id="name" placeholder="Player Name">
+
+<input type="text" id="uid" placeholder="Free Fire UID">
+
+<input type="text" id="rank" placeholder="Current Rank">
+
+<input type="text" id="level" placeholder="Level">
+
+<textarea id="reason" placeholder="Why do you want to join?" rows="5"></textarea>
+
+<button onclick="send()">Apply via WhatsApp</button>
+
+</div>
+
+<div class="card">
+<h2>Contact</h2>
+<p>WhatsApp: +91 7002549157</p>
+<p>Instagram: @zunaki.l</p>
+</div>
+
+</div>
+
+<footer>
+RED PIRATES © 2026 | Fight Together • Win Together
+</footer>
+
+<script>
+function send(){
+let msg =
+"*RED PIRATES Guild Application*%0A%0A"+
+"Player Name: "+document.getElementById("name").value+"%0A"+
+"UID: "+document.getElementById("uid").value+"%0A"+
+"Rank: "+document.getElementById("rank").value+"%0A"+
+"Level: "+document.getElementById("level").value+"%0A"+
+"Reason: "+document.getElementById("reason").value;
+
+window.open("https://wa.me/917002549157?text="+msg);
+}
+</script>
+
+</body>
+</html>
